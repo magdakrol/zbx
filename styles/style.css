@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'HelveticaNeueLTPro';
+    src: url('Linotype - HelveticaNeueLTPro-Roman.otf');
+    src: url('Linotype - HelveticaNeueLTPro-Roman.otf') format('opentype'),
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'relative-faux';
+    src: url('relative-faux.eot');
+    src: url('relative-faux.eot?#iefix') format('embedded-opentype'),
+         url('relative-faux.woff') format('woff'),
+         url('relative-faux.woff2') format('woff2'),
+         url('relative-faux.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+  font-size: 47px;
+  color: white;
+}
+h2{
+  font-size: 47px;
+  color: orange;
+  text-align: center;
+  display: block;
+  font-family: 'Courier New';
+
+
+}
+section{
+  background-color: rgb(46,46,46);
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1150px;
+    position: relative;
+    font-size: 15px;
+    font-family: 'courier new', serif;
+}
+.clear {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+header .wrapper {
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.menu{
+    flex: 0 0 80%;
+}
+.menu, .logo {
+          margin-top: 100px;
+}
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.logo {
+  flex: 0 0 15%;
+}
+nav, .social-icons{
+  display: inline-block;
+  color: white;
+}
+.social-icons ul li{
+  margin-right: 10px;
+}
+.background-image{
+  background: url(../assets/background.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.banner {
+  text-align: center;
+  margin-top:250px;
+}
+.banner a{
+  margin-top: 50px;
+  color: white;
+  padding: 15px 20px;
+  background-color: orange;
+}
+#timetable{
+  margin-top:300px;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+.timetable {
+  display: block;
+  flex: 0 0 70%;
+  color: white;
+  margin: 0 auto;
+}
+.timetable-item {
+  justify-content: center;
+}
+.timetable-item p {
+  flex: 0 0 50%;
+}
+.timetable-item a {
+  align-items: flex-end;
+  color: white;
+  text-decoration: none;
+
+}
+.date {
+  font-size: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.day-month {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.day-month span{
+  display: block
+}
+
+.about-photo, .about-content {
+  flex: 0 0 50%;
+}

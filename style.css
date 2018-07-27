@@ -1,0 +1,21 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+    position: relative;
+    font-size: 15px;
+}
+.clear {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ul li {
+  display: inline-block;
+}
