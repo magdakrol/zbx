@@ -1,20 +1,7 @@
-@font-face {
-    font-family: 'HelveticaNeueLTPro';
-    src: url('Linotype - HelveticaNeueLTPro-Roman.otf');
-    src: url('Linotype - HelveticaNeueLTPro-Roman.otf') format('opentype'),
 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'relative-faux';
-    src: url('relative-faux.eot');
-    src: url('relative-faux.eot?#iefix') format('embedded-opentype'),
-         url('relative-faux.woff') format('woff'),
-         url('relative-faux.woff2') format('woff2'),
-         url('relative-faux.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+body{
+letter-spacing: 0.5px;
 }
 
 h1{
@@ -22,13 +9,13 @@ h1{
   color: white;
 }
 h2{
-  font-size: 47px;
-  color: orange;
+  font-size: 42px;
+  color: #EB713A;
   text-align: center;
   display: block;
+  width: 100%;
   font-family: 'Courier New';
-
-
+  text-transform: uppercase;
 }
 section{
   background-color: rgb(46,46,46);
@@ -73,6 +60,10 @@ header .wrapper {
   text-transform: uppercase;
   font-size: 19px;
 }
+.menu a:hover{
+  color:#EB713A;
+  transition: 0.5s;
+}
 .logo {
   flex: 0 0 15%;
 }
@@ -99,10 +90,11 @@ nav, .social-icons{
   margin-top: 50px;
   color: white;
   padding: 15px 20px;
-  background-color: orange;
+  background-color: #EB713A;
 }
 #timetable{
   margin-top:300px;
+  padding-bottom: 100px;
   box-sizing: border-box;
   padding-top: 50px;
 }
@@ -115,7 +107,12 @@ nav, .social-icons{
 }
 .timetable-item {
   justify-content: center;
+  font-family: 'Nunito';
+  align-items: center;
+  margin-bottom: 40px;
 }
+
+
 .timetable-item p {
   flex: 0 0 50%;
 }
@@ -123,6 +120,8 @@ nav, .social-icons{
   align-items: flex-end;
   color: white;
   text-decoration: none;
+    font-weight: 800;
+
 
 }
 .date {
@@ -134,10 +133,59 @@ nav, .social-icons{
   font-size: 14px;
   margin-right: 20px;
 }
+
+.date
 .day-month span{
   display: block
 }
 
 .about-photo, .about-content {
   flex: 0 0 50%;
+}
+.about-content{
+  background-color: white;
+  box-sizing: border-box;
+}
+.about-text {
+
+  margin: 0 auto;
+  padding: 280px 210px;
+  font-family: 'Courier New';
+
+
+}
+.about-text p {
+  font-family: 'Courier New';
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  line-height: 25px;
+}
+
+.about-photo {
+  background:url('../assets/background.jpg');
+    )
+}
+
+.contact-info {
+  flex: 0 0 29%;
+}
+
+form {
+flex: 0 0 70%;
+}
+
+.half {
+  flex: 0 0 48%;
+}
+
+.full {
+  flex: 0 0 100%;
+}
+
+#team, #partners {
+  height: 500px;
+}
+
+#timetable, #team, #partners, #contact {
+  padding: 100px 0;
 }
